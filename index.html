@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aurora Studio: sites rápidos, bonitos e feitos sob medida para pequenos negócios e profissionais autônomos.">
+    <title>Aurora Studio | Sites sob medida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a class="logo" href="#inicio">Aurora<span>Studio</span></a>
+            <nav aria-label="Navegação principal">
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Sobre e contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-conteudo">
+                <p class="etiqueta">Design e desenvolvimento web freelancer</p>
+                <h1>Sites rápidos, bonitos e feitos sob medida.</h1>
+                <p class="slogan">Tire seu negócio do papel e coloque-o na internet com uma página clara, leve e pensada para gerar contatos.</p>
+                <button class="botao" id="btn-saiba-mais" type="button">Saiba Mais</button>
+                <p class="mensagem-cta" id="msg-cta" role="status" hidden></p>
+            </div>
+        </section>
+
+        <section class="secao" id="servicos" aria-labelledby="titulo-servicos">
+            <div class="container">
+                <h2 id="titulo-servicos">O que eu faço</h2>
+                <p class="secao-intro">Três formas de ajudar você a ser encontrado e lembrado.</p>
+                <div class="cartoes">
+                    <article class="cartao">
+                        <span class="cartao-icone" aria-hidden="true">01</span>
+                        <h3>Landing pages</h3>
+                        <p>Páginas objetivas para divulgar um serviço, produto ou evento, com foco em conversão.</p>
+                    </article>
+                    <article class="cartao">
+                        <span class="cartao-icone" aria-hidden="true">02</span>
+                        <h3>Sites institucionais</h3>
+                        <p>Presença profissional na internet, com várias seções e visual alinhado à sua marca.</p>
+                    </article>
+                    <article class="cartao">
+                        <span class="cartao-icone" aria-hidden="true">03</span>
+                        <h3>Ajustes e melhorias</h3>
+                        <p>Correções, novas seções e melhorias de desempenho em sites que já existem.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-contato" id="contato" aria-labelledby="titulo-contato">
+            <div class="container contato-grade">
+                <div class="sobre">
+                    <h2 id="titulo-contato">Sobre e contato</h2>
+                    <p>Sou desenvolvedora web freelancer e gosto de transformar ideias em páginas simples de usar. Cada projeto começa com uma conversa para entender seu objetivo, seu público e seu prazo.</p>
+                    <p>Conte um pouco sobre o que você precisa. Se quiser, informe seu CEP e o endereço é preenchido automaticamente.</p>
+                </div>
+
+                <form class="formulario" id="form-contato" novalidate>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cep">CEP <span class="opcional">(opcional)</span></label>
+                        <input type="text" id="cep" name="cep" inputmode="numeric" maxlength="9" placeholder="00000-000" autocomplete="postal-code">
+                        <p class="ajuda" id="status-cep" role="status"></p>
+                    </div>
+                    <div class="endereco" id="endereco">
+                        <div class="campo campo-largo">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" name="rua" readonly>
+                        </div>
+                        <div class="campo">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro" readonly>
+                        </div>
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" readonly>
+                        </div>
+                        <div class="campo campo-estreito">
+                            <label for="uf">UF</label>
+                            <input type="text" id="uf" name="uf" readonly>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </div>
+                    <button class="botao" type="submit">Enviar mensagem</button>
+                    <p class="mensagem-form" id="msg-form" role="status" hidden></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>© 2026 Aurora Studio. Projeto acadêmico em HTML, CSS e JavaScript.</p>
+        </div>
+    </footer>
+</body>
+</html>
